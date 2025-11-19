@@ -6,5 +6,5 @@ A small C programme simulating 100 random balls folling each other, demonstratin
 
 ## Flowchart
 
-![Flowchart of Balls](https://imgur.com/a/sMmr1U9)
+![Flowchart of Balls](https://i.imgur.com/SGvtmKF.png)
 
