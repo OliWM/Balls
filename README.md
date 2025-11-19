@@ -2,7 +2,7 @@ A small C programme simulating 100 random balls folling each other, demonstratin
 
 ## Video
 
-![Video of balls]((https://i.imgur.com/C90M8jl.gif))
+![Video of balls](https://github.com/OliWM/Balls/blob/main/src/ScreenRecording2025-11-11at17.04.08-ezgif.com-optimize.gif)
 
 ## Flowchart
 
