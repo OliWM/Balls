@@ -1,0 +1,45 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "/opt/homebrew/opt/llvm/bin/clang",
+            "args": [
+                "-std=c2x",
+                "-g",
+                "src/main.c",
+                "-o",
+                "main",
+                "-Iinclude",
+                "-I/opt/homebrew/Cellar/raylib/5.5/include",
+                "-L/opt/homebrew/Cellar/raylib/5.5/lib",
+                "-lraylib",
+                "-framework",
+                "Cocoa",
+                "-framework",
+                "IOKit",
+                "-framework",
+                "CoreVideo",
+                "-framework",
+                "OpenGL"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "run",
+            "type": "shell",
+            "command": "./main",
+            "group": {
+                "kind": "test",
+                "isDefault": true
+            },
+            "dependsOn": [
+                "build"
+            ]
+        }
+    ]
+}
